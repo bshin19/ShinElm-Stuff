@@ -5,9 +5,12 @@ public class BucketList {
     private List<String> bucket;
     private Member owner;
 
-    public BucketList(List<String> bucket, Member owner) {
+    private long id;
+
+    public BucketList(List<String> bucket, Member owner, long id) {
         this.bucket = bucket;
         this.owner = owner;
+        this.id = id;
     }
 
     public List<String> getBucket() {
@@ -21,5 +24,9 @@ public class BucketList {
 
     public Member getOwner() {
         return owner;
+    }
+
+    public long getId() {
+        return id;
     }
 }
