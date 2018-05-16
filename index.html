@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>shinelm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Clears browser CSS-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <!--Bootstrap CSS declaration-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!--Custom CSS declaration-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+
+</head>
+
+<body>
+
+    <!--Header: This will be a nav bar with interactive "Shinelm" element and login bar-->
+    <!--Bootstrap NavBar inserted and modified for specific use-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <!--Site logo/name-->
+        <!--Pieces are separate and floating left to keep them together-->
+        <div class="navbar-brand mx-4">
+            <div class="stickyBrand">Adventur
+            </div>
+            <div class="redBrand stickyBrand">us.
+            </div>
+            <a class="blueBrand stickyBrand mr-5" href="#">me
+            </a>
+        </div>
+
+        <!--Search Bar-->
+        <ul class="navbar-nav mx-4">
+            <form class="form-inline" action="#">
+                <input class="form-control mr-sm-2 btn-outline-danger" type="text" placeholder="Search">
+                <button class="btn btn-outline-danger" type="submit">Q</button>
+            </form>
+        </ul>
+
+        <!--Sets hiding of navbar collapsing -->
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Navbar Collapsing items. All non-collapsing items should be in a separate div-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+                <!--This needs to sync with the adventure list completion variable and display that percentage
+                Clicking on it will send the user to their adventure page, with a list
+                of adventures. Completed or in progress adventures will display a picture/video/etc
+                and a checkmark-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">10%</a>
+                </li>
+
+                <!--This setting will update the users feed between 3 settings
+                1. Entire Site + Friends/Following/Subscribed/Local
+                2. Entire Site without emphasis on friends/local
+                3. Local/Friends/Following/Subscribed ONLY
+                To accomplish this, a variable next to feed that displays text:
+                1. Comprehensive 2. Sitewide 3. Friends-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Feed</a>
+                </li>
+
+                <!--This setting drops down a list of notifications
+                It will display an exclamation mark if there are no notifications
+                and will turn red and have a number next to it if there are notifications
+                The list will also need to sync with the notification via a variable
+                So this item is missing several variables that will be defined in future
+                pages.-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        !
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Notification 1</a>
+                        <a class="dropdown-item" href="#">Notification 2</a>
+                        <a class="dropdown-item" href="#">Notification 3</a>
+                        <a class="dropdown-item" href="#">Notification 4</a>
+                        <a class="dropdown-item" href="#">Notification 5</a>
+                    </div>
+                </li>
+
+                <!-- Options Dropdown Menu
+                This menu links to several other pages with user settings and info
+                Settings will have several tabs on its hub page including 
+                Payment Settings-->         
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        *
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">FAQ</a>
+                        <a class="dropdown-item" href="#">Friends</a>
+                        <a class="dropdown-item" href="#">Subscriptions</a>
+                        <a class="dropdown-item" href="#">Following</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+                
+
+                <!--I don't like login credentials on the top screen
+                So I'm moving them to the not-logged-in page.-->
+                <!--
+                <form class="form-inline navbar-collapse-xl"">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                    </div>
+                </form>
+
+                <form class="form-inline navbar-collapse-xl">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Password" aria-label="Username">
+                        </div>
+                </form>
+
+                -->
+                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+            </div>
+        </div>
+    </div>
+
+    <!--Bootstrap JS, jQuery, and popper-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
